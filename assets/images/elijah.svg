@@ -1,0 +1,14 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a1a52;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b2d8f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#grad7)"/>
+  <circle cx="150" cy="80" r="40" fill="#e0b896"/>
+  <ellipse cx="150" cy="160" rx="35" ry="45" fill="#ffffff"/>
+  <rect x="20" y="240" width="260" height="50" fill="rgba(0,0,0,0.6)" rx="8"/>
+  <text x="150" y="265" font-size="23" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Elijah Gisore</text>
+  <text x="150" y="285" font-size="14" fill="#ccc" text-anchor="middle" font-family="Arial, sans-serif">Security Spec</text>
+</svg>

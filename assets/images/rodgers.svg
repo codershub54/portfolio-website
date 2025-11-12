@@ -1,0 +1,14 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a4a3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d7a5a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#grad9)"/>
+  <circle cx="150" cy="80" r="40" fill="#e6c4a0"/>
+  <ellipse cx="150" cy="160" rx="35" ry="45" fill="#1a1a1a"/>
+  <rect x="20" y="240" width="260" height="50" fill="rgba(0,0,0,0.6)" rx="8"/>
+  <text x="150" y="265" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Rodgers Jackson</text>
+  <text x="150" y="285" font-size="14" fill="#ccc" text-anchor="middle" font-family="Arial, sans-serif">DevOps Engineer</text>
+</svg>

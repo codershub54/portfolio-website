@@ -1,0 +1,28 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="skillGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#004080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0073e6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#skillGrad1)"/>
+  
+  <!-- Code brackets -->
+  <text x="50" y="80" font-size="60" fill="#fff" font-weight="bold" font-family="monospace">&lt;</text>
+  <text x="190" y="80" font-size="60" fill="#fff" font-weight="bold" font-family="monospace">/&gt;</text>
+  
+  <!-- Code lines -->
+  <line x1="80" y1="120" x2="220" y2="120" stroke="#fff" stroke-width="3" opacity="0.8"/>
+  <line x1="80" y1="150" x2="220" y2="150" stroke="#fff" stroke-width="3" opacity="0.8"/>
+  <line x1="80" y1="180" x2="220" y2="180" stroke="#fff" stroke-width="3" opacity="0.8"/>
+  
+  <!-- Small circles (dots) -->
+  <circle cx="90" cy="130" r="4" fill="#ff6b6b" opacity="0.8"/>
+  <circle cx="90" cy="160" r="4" fill="#4ecdc4" opacity="0.8"/>
+  <circle cx="90" cy="190" r="4" fill="#ffd93d" opacity="0.8"/>
+  
+  <!-- Label -->
+  <rect x="50" y="240" width="200" height="40" fill="rgba(0,0,0,0.3)" rx="6"/>
+  <text x="150" y="268" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Web Development</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skillGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c1384e"/>
+      <stop offset="100%" style="stop-color:#d9534f"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="300" fill="url(#skillGrad2)"/>
+  
+  <!-- Shield shape -->
+  <polygon points="150,60 220,110 220,170 150,240 80,170 80,110" fill="none" stroke="white" stroke-width="4"/>
+  
+  <!-- Padlock -->
+  <rect x="120" y="130" width="60" height="60" fill="none" stroke="white" stroke-width="3" rx="8"/>
+  <path d="M 135 130 L 135 110 Q 135 95 150 95 Q 165 95 165 110 L 165 130" fill="none" stroke="white" stroke-width="3"/>
+  
+  <!-- Keyhole dot -->
+  <circle cx="150" cy="160" r="5" fill="white"/>
+  
+  <!-- Checkmark accent -->
+  <polyline points="110,185 130,200 155,165" fill="none" stroke="#4ecdc4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Label background -->
+  <rect x="30" y="245" width="240" height="45" fill="rgba(0,0,0,0.4)" rx="8"/>
+  
+  <!-- Label text -->
+  <text x="150" y="275" font-size="16" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial, sans-serif">Cybersecurity &amp; Protection</text>
+</svg>

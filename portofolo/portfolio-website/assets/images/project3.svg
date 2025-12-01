@@ -1,0 +1,30 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="projGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b2c39"/>
+      <stop offset="100%" style="stop-color:#a1486b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#projGrad3)"/>
+  
+  <!-- Browser window -->
+  <rect x="70" y="50" width="260" height="160" fill="none" stroke="white" stroke-width="2" rx="8"/>
+  <rect x="70" y="50" width="260" height="25" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="80" cy="62.5" r="3" fill="#ff6b6b"/>
+  <circle cx="95" cy="62.5" r="3" fill="#ffd93d"/>
+  <circle cx="110" cy="62.5" r="3" fill="#4ecdc4"/>
+  
+  <!-- Content lines (representing portfolio) -->
+  <line x1="85" y1="85" x2="315" y2="85" stroke="#4ecdc4" stroke-width="3"/>
+  <line x1="85" y1="105" x2="200" y2="105" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="85" y1="120" x2="240" y2="120" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="85" y1="135" x2="200" y2="135" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="85" y1="150" x2="280" y2="150" stroke="white" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Stars decoration -->
+  <polygon points="330,80 335,95 350,95 340,103 345,118 330,110 315,118 320,103 310,95 325,95" fill="#ffd93d"/>
+  
+  <!-- Title -->
+  <rect x="30" y="205" width="340" height="35" fill="rgba(0,0,0,0.3)" rx="5"/>
+  <text x="200" y="230" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">Group Portfolio Template</text>
+</svg>

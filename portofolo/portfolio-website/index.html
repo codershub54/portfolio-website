@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SIT209 Group Portfolio</title>
+  <meta name="description" content="Group portfolio showcasing team members, skills, projects, testimonials, and contact information." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS -->
+  <style>
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004080;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #004080, #0073e6);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  background: #fff;
+  color: #004080;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #e6e6e6;
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #004080;
+}
+
+/* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2.5rem;
+}
+
+.team-member {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,64,128,0.2);
+}
+
+.team-member img {
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  border: 4px solid #004080;
+  transition: transform 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-member:hover img {
+  transform: scale(1.05);
+}
+
+.team-member h3 {
+  font-size: 1.35rem;
+  color: #004080;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.team-member p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Skills Section */
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skills-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #fff;
+  margin: 0.7rem 0;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  font-size: 0.95rem;
+  color: #333;
+  border-left: 4px solid #004080;
+  transition: all 0.3s ease;
+}
+
+.skills-list li:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 12px rgba(0,64,128,0.15);
+  background: #f0f4ff;
+}
+
+.skills-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skills-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.skills-images img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive: stack skills and images on mobile */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Projects Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: #004080;
+}
+
+.project-card p {
+  margin-bottom: 0.5rem;
+}
+
+.project-card .rating {
+  color: #ffcc00;
+  font-size: 1.2rem;
+}
+
+.project-card blockquote {
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Contact Section */
+#contact form {
+  max-width: 500px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact label {
+  font-weight: 600;
+}
+
+#contact input, #contact textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact button {
+  background: #004080;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background: #0073e6;
+}
+
+/* Inline form message (success / error) */
+.form-message {
+  max-width: 500px;
+  margin: 0.5rem auto 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  display: none;
+}
+.form-message.success {
+  display: block;
+  background: #e6ffef;
+  color: #007a3d;
+  border: 1px solid rgba(0,122,61,0.15);
+}
+.form-message.error {
+  display: block;
+  background: #fff1f0;
+  color: #a80000;
+  border: 1px solid rgba(168,0,0,0.12);
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #004080;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-icon:hover {
+  background: #0073e6;
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(0, 64, 128, 0.4);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #004080;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">SIT209 Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Team</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to Our Group Portfolio</h1>
+    <p>We are Records Management & IT students showcasing our web design skills.</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </section>
+<section id="about">
+ <!-- Meet the Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Meet the Team</h2>
+            <p class="team-intro">Our talented group of 10 developers and designers working together</p>
+            
+            <!-- Group Photo -->
+            <div class="team-group-section">
+                <div class="group-jpeg">
+https://codershub54.github.io/portfolio-website/assets/images/group.jpeg
+
+
+                    <div class="group-overlay">
+                        <h3>Meet Our Team</h3>
+                        <p>10 Talented Professionals • 1 Vision • Infinite Possibilities</p>
+                    </div>
+                </div>
+            </div>
+            <section id="about">
+    <h2>Meet the Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="assets/images/brian.jpg" alt="Brian Murithi">
+        <h3>Brian Murithi</h3>
+        <p>Software Engineer</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/ian.jpg" alt="Ian Omae">
+        <h3>Ian Omae</h3>
+        <p>Graphic Designer</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/yvonne.jpg" alt="Yvonne Muthii">
+        <h3>Yvonne Muthii</h3>
+        <p>Lead Designer</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/caroline.png" alt="Caroline Mwikali">
+        <h3>Caroline Mwikali</h3>
+        <p>Frontend Developer</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/samson.jpg" alt="Samson Nyaachi">
+        <h3>Samson Nyaachi</h3>
+        <p>Backend Developer</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/mokaya.jpg" alt="Mokaya Duke">
+        <h3>Mokaya Duke</h3>
+        <p>Database Administrator</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/elijah.jpg" alt="Elijah Gisore">
+        <h3>Elijah Gisore</h3>
+        <p>Security Specialist</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/rooney.svg" alt="Rooney Natuoli">
+        <h3>Rooney Natuoli</h3>
+        <p>QA Tester</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/rodgers.jpg" alt="Rodgers Jackson">
+        <h3>Rodgers Jackson</h3>
+        <p>DevOps Engineer</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/racheal.jpg" alt="Racheal">
+        <h3>Racheal Kasudi</h3>
+        <p>Project Manager</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Our Skills</h2>
+    <div class="skills-container">
+      <div class="skills-list">
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Web Development & Design</li>
+          <li>Bootstrap & Responsive Design</li>
+          <li>Cybersecurity & Data Protection</li>
+          <li>Database Management (SQL, NoSQL)</li>
+          <li>Backend Development & APIs</li>
+          <li>GitHub & Version Control</li>
+          <li>UI/UX Design Principles</li>
+          <li>SEO & Accessibility</li>
+          <li>DevOps & Cloud Deployment</li>
+          <li>Project Management & Collaboration</li>
+          <li>Agile & Scrum Methodologies</li>
+          <li>Continuous Integration & Deployment</li>
+          <li>Graphic Design & Multimedia</li>
+        </ul>
+      </div>
+      <div class="skills-images">
+        <img src="assets/images/skill-web.svg" alt="Web Development">
+        <img src="assets/images/skill-security.svg" alt="Cybersecurity">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects Showcase</h2>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="assets/images/project1.svg" alt="Online Records Portal">
+        <h3>Online Records Portal</h3>
+        <p>A responsive portal for managing student records.</p>
+        <p class="rating">⭐⭐⭐⭐⭐</p>
+        <blockquote>“This portal simplified our record access and boosted efficiency.” — Registrar’s Office</blockquote>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="assets/images/project2.svg" alt="Library Catalogue">
+        <h3>Library Catalogue Website</h3>
+        <p>A searchable catalogue for academic resources.</p>
+        <p class="rating">⭐⭐⭐⭐☆</p>
+        <blockquote>“The interface is intuitive and mobile-friendly. Great job!” — Library Admin</blockquote>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="assets/images/project3.svg" alt="Group Portfolio">
+        <h3>Group Portfolio Template</h3>
+        <p>Our SIT209 CAT1 portfolio site.</p>
+        <p class="rating">⭐⭐⭐⭐⭐</p>
+        <blockquote>“Professional layout and clean navigation. A+ presentation.” — Lecturer</blockquote>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="assets/images/project4.svg" alt="Feedback Form">
+        <h3>Student Feedback Form</h3>
+        <p>A simple form for collecting feedback with validation.</p>
+        <p class="rating">⭐⭐⭐⭐☆</p>
+        <blockquote>“We received more feedback than ever thanks to this form.” — Class Rep</blockquote>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card">
+        <img src="assets/images/project5.svg" alt="Digital Archive Viewer">
+        <h3>Digital Archive Viewer</h3>
+        <p>A mockup archive interface with thumbnails and metadata.</p>
+        <p class="rating">⭐⭐⭐⭐☆</p>
+        <blockquote>“Visually appealing and easy to browse. Impressive work.” — Records Manager</blockquote>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card">
+        <img src="assets/images/project6.svg" alt="Resume Builder">
+        <h3>Responsive Resume Builder</h3>
+        <p>A template that generates styled resumes from user input.</p>
+        <p class="rating">⭐⭐⭐⭐⭐</p>
+        <blockquote>“This tool helped me land my internship. Thank you!” — IT Student</blockquote>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+      <div class="contact-icons">
+        <a href="mailto:websitesbrian585@gmail.com" title="Email" class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+254728390357" title="Call Us" class="contact-icon">
+          <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/254762097075" target="_blank" title="WhatsApp" class="contact-icon">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://facebook.com/brian_wrld2" target="_blank" title="Facebook" class="contact-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/Gen3785" target="_blank" title="Twitter" class="contact-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com/brian_wrld2" target="_blank" title="Instagram" class="contact-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+    <div id="form-message" class="form-message" aria-live="polite"></div>
+    <form class="contact-form" action="https://formspree.io/f/yourFormID" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="_replyto" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+   
+  <footer>
+    <p>&copy; 2025 SIT209 Group Portfolio. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

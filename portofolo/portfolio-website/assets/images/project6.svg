@@ -1,0 +1,32 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="projGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a52"/>
+      <stop offset="100%" style="stop-color:#2d5f7f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#projGrad6)"/>
+  
+  <!-- Resume document -->
+  <rect x="80" y="60" width="140" height="160" fill="white" rx="4"/>
+  
+  <!-- Resume content lines -->
+  <line x1="95" y1="75" x2="205" y2="75" stroke="#004080" stroke-width="3"/>
+  <line x1="95" y1="90" x2="205" y2="90" stroke="#004080" stroke-width="2"/>
+  <line x1="95" y1="105" x2="180" y2="105" stroke="#999" stroke-width="1.5"/>
+  <line x1="95" y1="118" x2="205" y2="118" stroke="#999" stroke-width="1.5"/>
+  <line x1="95" y1="130" x2="205" y2="130" stroke="#999" stroke-width="1.5"/>
+  <line x1="95" y1="142" x2="190" y2="142" stroke="#999" stroke-width="1.5"/>
+  <line x1="95" y1="155" x2="205" y2="155" stroke="#999" stroke-width="1.5"/>
+  <line x1="95" y1="167" x2="200" y2="167" stroke="#999" stroke-width="1.5"/>
+  <line x1="95" y1="179" x2="205" y2="179" stroke="#999" stroke-width="1.5"/>
+  <line x1="95" y1="191" x2="180" y2="191" stroke="#999" stroke-width="1.5"/>
+  
+  <!-- Checkmark on side -->
+  <circle cx="310" cy="130" r="30" fill="none" stroke="#4ecdc4" stroke-width="2"/>
+  <polyline points="295,130 310,145 335,115" fill="none" stroke="#4ecdc4" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Title -->
+  <rect x="30" y="205" width="340" height="35" fill="rgba(0,0,0,0.3)" rx="5"/>
+  <text x="200" y="230" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">Responsive Resume Builder</text>
+</svg>
